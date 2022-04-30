@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={{color: "#ffff"}}>Objective Calvary</Text>
+      <Text style={{color: "#ffff"}}>Objective Calvary!</Text>
       <StatusBar style="auto" />
     </View>
   );
