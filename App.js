@@ -4,6 +4,8 @@ import { StyleSheet, Text, View, Dimensions, ScrollView, Image } from 'react-nat
 import { WebView } from 'react-native-webview';
 import YoutubePlayer from "react-native-youtube-iframe";
 
+const windowWidth = Dimensions.get('window').width;
+
 export default function App() {
   const [playing, setPlaying] = useState(false);
 
@@ -31,9 +33,12 @@ export default function App() {
 <Text style={{color: "#fff", fontSize: 20, fontWeight: "bold"}}>Genesis</Text>
 
 <View style={{flexDirection: "row"}}>
-  
+  <View>
   <View style={{width: 320, height: 160, backgroundColor: "#fff", borderRadius: 5, margin: 5, marginRight: 10, marginLeft:0}}>  
   <YoutubePlayer height={300} play={playing} videoId={"sV10n3B7S4I"} onChangeState={onStateChange}/>
+  
+  </View>
+  <Text style={{color:"#fff", marginTop: 30}}>Hello trying this</Text>
   </View>
 
   <View style={{width: 320, height: 160, backgroundColor: "#fff", borderRadius: 5, margin: 5, marginRight: 10, marginLeft:0}}>  
@@ -45,18 +50,51 @@ export default function App() {
 </View>
 
 
-<View style={{paddingLeft: 30, paddingTop: 30}}>
-<Text style={{color: "#fff", fontSize: 20, fontWeight: "bold"}}>Exodus</Text>
+<View style={{ paddingTop: 30, }}>
+<Text style={{color: "#fff", fontSize: 20, fontWeight: "bold", paddingLeft: 30}}>Exodus</Text>
 
-<View style={{flexDirection: "row"}}>
-  
+<View style={{flexDirection: "row", }}>
+<ScrollView horizontal showsHorizontalScrollIndicator contentContainerStyle={{flex: 1, flexGrow: 1, width: windowWidth, paddingLeft: 30}}>
+
+<View>
   <View style={{width: 320, height: 160, backgroundColor: "#fff", borderRadius: 5, margin: 5, marginRight: 10, marginLeft:0}}>  
-  <YoutubePlayer height={300} play={playing} videoId={"ysJ_sqQoBMU"} onChangeState={onStateChange}/>
+  <YoutubePlayer height={300} play={playing} videoId={"sV10n3B7S4I"} onChangeState={onStateChange}/>
+  
+  </View>
+<View style={{marginTop: 30, marginBottom: 30, width: 320, backgroundColor: "#fff", borderRadius: 5, padding: 10}}>
+  <Text style={{  }}>The Tabernacle</Text>
+  <Text style={{  }}>Infographic</Text>
+  </View>
   </View>
 
   <View style={{width: 320, height: 160, backgroundColor: "#fff", borderRadius: 5, margin: 5, marginRight: 10, marginLeft:0}}>  
   <YoutubePlayer height={300} play={playing} videoId={"loPBNrQfoN0"} onChangeState={onStateChange}/>
   </View>
+
+  <View style={{width: 320, height: 160, backgroundColor: "#fff", borderRadius: 5, margin: 5, marginRight: 10, marginLeft:0}}>  
+  <YoutubePlayer height={300} play={playing} videoId={"ysJ_sqQoBMU"} onChangeState={onStateChange}/>
+  </View>
+
+
+  <View style={{width: 320, height: 160, backgroundColor: "#fff", borderRadius: 5, margin: 5, marginRight: 10, marginLeft:0}}>  
+  <YoutubePlayer height={300} play={playing} videoId={"ysJ_sqQoBMU"} onChangeState={onStateChange}/>
+  </View>
+
+
+  <View style={{width: 320, height: 160, backgroundColor: "#fff", borderRadius: 5, margin: 5, marginRight: 10, marginLeft:0}}>  
+  <YoutubePlayer height={300} play={playing} videoId={"ysJ_sqQoBMU"} onChangeState={onStateChange}/>
+  </View>
+
+
+  <View style={{width: 320, height: 160, backgroundColor: "#fff", borderRadius: 5, margin: 5, marginRight: 10, marginLeft:0}}>  
+  <YoutubePlayer height={300} play={playing} videoId={"ysJ_sqQoBMU"} onChangeState={onStateChange}/>
+  </View>
+
+
+  <View style={{width: 320, height: 160, backgroundColor: "#fff", borderRadius: 5, margin: 5, marginRight: 10, marginLeft:0}}>  
+  <YoutubePlayer height={300} play={playing} videoId={"ysJ_sqQoBMU"} onChangeState={onStateChange}/>
+  </View>
+  </ScrollView>
 
 </View>
 
