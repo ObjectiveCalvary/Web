@@ -97,7 +97,7 @@ import {ImageBackground, StyleSheet, Text, View, TouchableOpacity} from 'react-n
 const Home = () => (
   <View style={styles.container}>
     <ImageBackground source={require("./assets/6.jpg")} resizeMode="cover" style={styles.image}>
-    
+    {/* Hi */}
     <View style={styles.view}>
         <Text style={{color: "#fff", fontWeight: "bold", fontSize: 50, margin: 20}}>A Bible Context Tool</Text>
     </View>
