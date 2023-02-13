@@ -48,10 +48,10 @@ const ModalPoup = ({visible, children}) => {
   );
 };
 
-const Info = ({Text, DataB, Title}) => {
+const Info = ({Text, DataB, Title, Chapter, Type}) => {
   const [visible, setVisible] = React.useState(false);
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center', }}>
+    <View style={{flex: 1,  }}>
       <ModalPoup visible={visible}>
         <View style={{alignItems: 'center', }}>
           <View style={styles.header}>
@@ -72,15 +72,28 @@ const Info = ({Text, DataB, Title}) => {
 
       
       </ModalPoup>
-      
-      <TouchableOpacity  onPress={() => setVisible(true)}>
-      <View style={{flexDirection: "row",}}>
-      <Ionicons name="caret-down-circle" size={20} color="#fff" />
-      <Text style={{color: "#fff", fontSize: 18, fontWeight: "bold", paddingLeft:5}}>Images</Text>
+
+<View style={{alignItems: "flex-start",  borderRightWidth: 0.5, borderColor: "#fff"}}>
+      <View style={{flexDirection: "row", marginLeft: 8}}>
+      <Text style={{color: "#fff", fontSize: 18, fontWeight: "bold", marginBottom: 8}}>{Chapter}</Text>
       </View>
+
+      <View style={{flexDirection: "row", marginLeft: 8}}>
+      <Text style={{color: "#fff", fontSize: 18, fontWeight: "bold", marginBottom: 10, }}>Type: {Type}</Text>
+      </View>
+
+      <TouchableOpacity  onPress={() => setVisible(true)}>
+      <View style={{flexDirection: "row", backgroundColor: "#fff", borderRadius: 5, marginLeft: 8}}>
+  
+      <Text style={{color: "#000", fontSize: 18,  padding: 5, }}>IMAGES</Text>
+      <Ionicons name="caret-down-circle" size={27} color="#000" />
+      </View>
+
+    
       </TouchableOpacity>
-      
-    </View>
+      </View>
+      </View>
+
   );
 };
 
