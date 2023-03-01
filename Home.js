@@ -156,6 +156,7 @@ const styles = StyleSheet.create({
     flex: "flex-end",
   },
   view3: {
+    marginBottom: 22,
     flexDirection: "row"
   }
   
