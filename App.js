@@ -93,7 +93,6 @@ import {Image, Text, View} from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from "./Home";
-import About from "./About";
 
 
 const Stack = createStackNavigator();
@@ -114,21 +113,22 @@ function LogoTitle() {
 
 export default function App({navigation}) {
 
-
   return (
     <NavigationContainer>
     <Stack.Navigator>
-     <Stack.Screen name="Home" component={Home} options={{ headerTransparent: true, headerTitleAlign: 'center', title: 'Objective Calvary', headerTitle: (props) => <LogoTitle {...props} />, 
-     headerTintColor: '#ffffff',
+     <Stack.Screen name="Home" component={Home} options={{title: 'Objective Calvary', headerTitle: (props) => <LogoTitle {...props} />, 
+     headerTintColor: '#000',
       headerStyle: {
-        backgroundColor: '#262626',
+        backgroundColor: '#6b6b6b',
         borderBottomColor: '#ffffff',
         borderBottomWidth: 0,
       },
       headerTitleStyle: {
         fontSize: 18,
+        color: "#000"
       }
       }}/>
+      
   </Stack.Navigator>
   </NavigationContainer>
   );
