@@ -6,13 +6,35 @@ import {ImageBackground, StyleSheet, Text, View, TouchableOpacity, Linking} from
 
 
 
-const Home = () => (
+const Home = ({navigation}) => (
   
   <View style={styles.container}>
+    
     <ImageBackground source={require("./assets/Computer_Background.jpg")} resizeMode="cover" style={styles.image}>
 
+  
+    <View style={{flexDirection: "row",  Top: 10, margin: 10, padding: 10,  elevation: 5, }}>
+      <Text style = {{marginLeft: 10, marginTop: 4, fontSize: 15, fontWeight: 'bold', color: "#fff", }}>Objective Calvary</Text>
+      <View style={{flexDirection: "row", marginLeft: 15, justifyContent: "center", backgroundColor: "#fff", borderRadius: 20, padding: 5}}>
+ 
+      <TouchableOpacity onPress={() => navigation.navigate("Home") } >
+          <Text style={styles.txt}>Home</Text>
+      </TouchableOpacity>
+      
+        <TouchableOpacity onPress={() => navigation.navigate("About") } >
+        <Text style={styles.txt}>About</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => navigation.navigate("Gallery") } >
+        <Text style={styles.txt}>Gallery</Text>
+        </TouchableOpacity>
+
+      </View>
+    </View>
+    
+    <View style={{flex: 1, alignItems: "center", justifyContent: "center", }}>
     {/* Hi */}
-    <View style={{marginBottom: 100}}>
+    <View style={{marginBottom: 150, backgroundColor: "rgba(31, 31, 31, 0.2)", padding: 30, borderWidth: 0.5, borderColor: "#fff"}}>
     <View style={styles.view}>
         <Text style={{color: "#fff", fontWeight: "bold", fontSize: 50, margin: 20}}>A Bible Context Tool</Text>
     </View>
@@ -35,6 +57,11 @@ const Home = () => (
 
       </View>
       </View>
+      </View>
+      
+ 
+
+
     </ImageBackground>
   </View>
 );
@@ -45,7 +72,7 @@ const styles = StyleSheet.create({
   },
   image: {
     flex: 1,
-    justifyContent: 'center',
+  
 
   },
 
@@ -73,6 +100,11 @@ const styles = StyleSheet.create({
   view3: {
     
     flexDirection: "row"
+  },
+  txt: {
+    fontSize: 14,
+    fontWeight: "500",
+    marginHorizontal: 10
   }
   
 });
