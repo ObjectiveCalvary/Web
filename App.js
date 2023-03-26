@@ -94,7 +94,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from "./Home";
 import About from "./About";
-import Gallery from "./Gallery";
+
 
 
 const Stack = createStackNavigator();
@@ -120,7 +120,6 @@ export default function App({navigation}) {
     <Stack.Navigator>
      <Stack.Screen name="Home" component={Home} options={{headerShown: false, title: 'Objective Calvary', headerTitle: (props) => <LogoTitle {...props} />}}/>
      <Stack.Screen name="About" component={About} options={{headerShown: false, title: 'Objective Calvary', headerTitle: (props) => <LogoTitle {...props} />}}/>
-     <Stack.Screen name="Gallery" component={Gallery} options={{headerShown: false, title: 'Objective Calvary', headerTitle: (props) => <LogoTitle {...props} />}}/>
   </Stack.Navigator>
   </NavigationContainer>
   );

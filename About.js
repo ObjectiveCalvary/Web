@@ -10,10 +10,10 @@ const About = ({navigation}) => (
   
   <View style={styles.container}>
     
-    <ImageBackground source={require("./assets/High Priest.jpg")} resizeMode="cover" style={styles.image}>
+    <ImageBackground source={require("./assets/5.jpg")} resizeMode="cover" style={styles.image}>
 
   
-    <View style={{flexDirection: "row",  Top: 10, margin: 10, padding: 10,  elevation: 5, }}>
+    <View style={{flexDirection: "row",  Top: 10, margin: 10, padding: 10,  elevation: 5, alignContent: "center", justifyContent: "center"}}>
       <Text style = {{marginLeft: 10, marginTop: 4, fontSize: 15, fontWeight: 'bold', color: "#fff", }}>Objective Calvary</Text>
       <View style={{flexDirection: "row", marginLeft: 15, justifyContent: "center", backgroundColor: "#fff", borderRadius: 20, padding: 5}}>
      
@@ -25,9 +25,6 @@ const About = ({navigation}) => (
         <Text style={styles.txt}>About</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.navigate("Gallery") } >
-        <Text style={styles.txt}>Gallery</Text>
-        </TouchableOpacity>
       </View>
     </View>
     
@@ -35,7 +32,7 @@ const About = ({navigation}) => (
     {/* Hi */}
     <View style={{marginBottom: 100}}>
     <View style={styles.view}>
-        <Text style={{color: "#fff", fontWeight: "bold", fontSize: 50, margin: 10}}>About US</Text>
+        <Text style={{color: "#2b2b2b", fontWeight: "bold", fontSize: 50, margin: 10}}>About US</Text>
     </View>
 
     <View style={styles.view}>
@@ -43,14 +40,14 @@ const About = ({navigation}) => (
 
        
         <Text style={styles.txt_t}>Objective Calvary: The Ultimate 3D Christian Illustration Software</Text>
-        <View style={{backgroundColor: "rgba(225, 225, 225, 0.2)",  padding: 10, borderWidth: 0.5, borderColor: "#fff"}}>
+        <View style={{backgroundColor: "rgba(225, 225, 225, 0.2)",  padding: 10, borderWidth: 0.5, borderColor: "#2b2b2b", borderRadius: 8}}>
         <Text style={styles.txt2}>Are you looking for a way to better visualize the stories and teachings of the Bible? Do you struggle to grasp the full meaning and context of the words on the page? Look no further than Objective Calvary, the revolutionary 3D illustration software designed specifically for Christians. {"\n"}{"\n"}</Text>
         <Text style={styles.txt2}>With Objective Calvary, you can bring the Bible to life like never before. Our faithful depictions of biblical passages are created with meticulous attention to detail, ensuring that every scene is accurate and true to the Word of God. {"\n"}{"\n"}</Text>
         <Text style={styles.txt2}>Whether you're a pastor looking to enhance your sermons with visual illustrations, a Bible study leader seeking to deepen your group's understanding, or simply a curious Christian eager to explore the stories that shape our faith, Objective Calvary has everything you need. Our easy-to-use interface and powerful rendering capabilities are simple to use and will help you captivate your audience and illuminate the mysteries of the Bible. {"\n"}{"\n"}</Text>
         <Text style={styles.txt2}>So why wait? Start your journey with Objective Calvary today and discover the power of 3D Christian illustration. With our software, you'll gain new insights into the Bible and deepen your relationship with Jesus Christ. {"\n"}{"\n"}</Text>
         </View>
         <Text style={styles.txt_t}>Disclaimer:</Text>
-        <View style={{backgroundColor: "rgba(225, 225, 225, 0.2)", padding: 10, borderWidth: 0.5, borderColor: "#fff"}}>
+        <View style={{backgroundColor: "rgba(225, 225, 225, 0.2)", padding: 10, borderWidth: 0.5, borderColor: "#2b2b2b", borderRadius: 8}}>
         <Text style={styles.txt2}>Any content, including 3D models and illustrations, used from Objective Calvary is free to use in any medium that seeks to spread the gospel of Jesus Christ. However, we ask that you credit Objective Calvary and its creators appropriately in your work. The content provided by Objective Calvary is intended for non-commercial, educational, and evangelistic purposes only. Any use of the content for commercial or personal gain without permission is strictly prohibited. The creators of Objective Calvary assume no responsibility for any errors or omissions in the content, and disclaim any liability for any damages or losses that may arise from its use. By using the content provided by Objective Calvary, you agree to these terms and conditions.</Text>
         </View>
 
@@ -74,10 +71,10 @@ const styles = StyleSheet.create({
   txt2: {
     fontSize: 15,  
     margin: 10, 
-    color: "#fff",
+    color: "#2b2b2b",
   },
   txt_t: {
-    color: "#fff", fontSize: 20, margin: 10, fontWeight: "bold", marginVertical: 30
+    color: "#2b2b2b", fontSize: 20, margin: 10, fontWeight: "bold", marginVertical: 30
   },
 
   bt: {
@@ -108,7 +105,8 @@ const styles = StyleSheet.create({
   txt: {
     fontSize: 14,
     fontWeight: "500",
-    marginHorizontal: 10
+    marginHorizontal: 10,
+    color: "#2b2b2b"
   }
   
 });
