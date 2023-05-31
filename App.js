@@ -94,6 +94,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from "./Home";
 import About from "./About";
+import Download from "./download";
+import PricePlans from "./plans";
 
 
 
@@ -106,7 +108,7 @@ function LogoTitle() {
       source={require('./assets/icon.png')}
     />
     <View style={{marginLeft: 20, marginTop: 7}}>
-    <Text style={{textAlign: "center", fontWeight: "700", color: "#fff", fontSize: 25, textAlignVertical: "center"}}>Objective Calvary</Text>
+    <Text style={{textAlign: "center", fontWeight: "700", color: "#000", fontSize: 25, textAlignVertical: "center"}}>Objective Calvary</Text>
     </View>
     </View>
   );
@@ -118,8 +120,11 @@ export default function App({navigation}) {
   return (
     <NavigationContainer>
     <Stack.Navigator>
-     <Stack.Screen name="Home" component={Home} options={{headerShown: false, title: 'Objective Calvary', headerTitle: (props) => <LogoTitle {...props} />}}/>
-     <Stack.Screen name="About" component={About} options={{headerShown: false, title: 'Objective Calvary', headerTitle: (props) => <LogoTitle {...props} />}}/>
+     <Stack.Screen name="Home" component={Home} options={{ title: 'Objective Calvary', headerTitle: (props) => <LogoTitle {...props} />}}/>
+     <Stack.Screen name="About" component={About} options={{ title: 'Objective Calvary', headerTitle: (props) => <LogoTitle {...props} />}}/>
+     <Stack.Screen name="Download" component={Download} options={{title: 'Objective Calvary', headerTitle: (props) => <LogoTitle {...props} />}}/>
+     <Stack.Screen name="PricePlans" component={PricePlans} options={{title: 'Objective Calvary', headerTitle: (props) => <LogoTitle {...props} />}}/>
+
   </Stack.Navigator>
   </NavigationContainer>
   );

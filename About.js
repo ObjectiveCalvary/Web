@@ -13,20 +13,6 @@ const About = ({navigation}) => (
     <ImageBackground source={require("./assets/5.jpg")} resizeMode="cover" style={styles.image}>
 
   
-    <View style={{flexDirection: "row",  Top: 10, margin: 10, padding: 10,  elevation: 5, alignContent: "center", justifyContent: "center"}}>
-      <Text style = {{marginLeft: 10, marginTop: 4, fontSize: 15, fontWeight: 'bold', color: "#fff", }}>Objective Calvary</Text>
-      <View style={{flexDirection: "row", marginLeft: 15, justifyContent: "center", backgroundColor: "#fff", borderRadius: 20, padding: 5}}>
-     
-      <TouchableOpacity onPress={() => navigation.navigate("Home") } >
-          <Text style={styles.txt}>Home</Text>
-      </TouchableOpacity>
-      
-        <TouchableOpacity onPress={() => navigation.navigate("About") } >
-        <Text style={styles.txt}>About</Text>
-        </TouchableOpacity>
-
-      </View>
-    </View>
     
     <View style={{flex: 1}}>
     {/* Hi */}
