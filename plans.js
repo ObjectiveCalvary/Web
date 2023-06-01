@@ -10,7 +10,7 @@ const PricePlans = () => {
 
       <TouchableOpacity style={styles.plan} onPress={() => Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLSe4V5tmFzPW2Oknj7vI_5LCmAa1_g_BpIGz2_AQxHKD0nvYUw/viewform?usp=sf_link')}>
         <Text style={styles.planTitle}>Individual Student</Text>
-        <Text style={styles.planPrice}>R200/month</Text>
+        <Text style={styles.planPrice}></Text>
         <Text style={styles.planDescription}>
         This plan is designed for individuals who are not associated with any specific church, but wish to join our online Bible School.        </Text>
         <Text style={styles.planDescription2}>
@@ -24,7 +24,7 @@ const PricePlans = () => {
 
       <TouchableOpacity style={styles.plan} onPress={() => Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLSeT_ZBfOlCfVQIWUS0ViXR_V6G10Ey0L5KzyLBWZuidUypdTg/viewform?usp=sf_link')}>
         <Text style={styles.planTitle}>Church</Text>
-        <Text style={styles.planPrice}>300/month</Text>
+        <Text style={styles.planPrice}></Text>
         <Text style={styles.planDescription}>
         This plan is specifically tailored for Churches seeking to utilize this platform to effectively manage their courses, content, sermons, and youth groups, while seamlessly distributing them to their congregation.        </Text>
         <Text style={styles.planFeatures}>
@@ -42,7 +42,7 @@ const PricePlans = () => {
 
       <TouchableOpacity style={styles.plan} onPress={() => Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLScM4qe2aBBrMX8pI5XfmFMGKH5iAOPUgZLiwKr6H2Ral-gATw/viewform?usp=sf_link')}>
         <Text style={styles.planTitle}>School Education</Text>
-        <Text style={styles.planPrice}>Contact for Quote</Text>
+        <Text style={styles.planPrice}></Text>
         <Text style={styles.planDescription}>
         This plan is specifically designed for Christian schools that wish to utilize this platform for interactive and measurable teaching methods, tailored to their students' needs.        </Text>
         <Text style={styles.planFeatures}>
